@@ -1,0 +1,22 @@
+{
+  "name": "utctorelative",
+  "version": "1.2.2",
+  "description": "Convert a UTC time (in seconds) to a relative time (e.g. \"Tomorrow, 16:00\")",
+  "main": "utcToRelative.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sd0e/utcToRelative.git"
+  },
+  "keywords": [
+    "time",
+    "date",
+    "utc",
+    "convert"
+  ],
+  "author": "sdoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sd0e/utcToRelative/issues"
+  },
+  "homepage": "https://github.com/sd0e/utcToRelative#readme"
+}
