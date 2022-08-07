@@ -1,6 +1,6 @@
 {
   "name": "utctorelative",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Convert a UTC time (in seconds) to a relative time (e.g. \"Tomorrow, 16:00\")",
   "main": "utcToRelative.js",
   "repository": {
