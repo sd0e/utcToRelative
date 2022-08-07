@@ -41,7 +41,7 @@ module.exports = function utcToRelative(utc = new Date().getTime(), hourFormat =
     } else {
         const isSameYear = date.getFullYear() === currentDate.getFullYear();
 
-        returnString += `${dayOfMonth} ${getMonthName(date)}${isSameYear && ' ' + date.getFullYear()}`;
+        returnString += `${dayOfMonth} ${getMonthName(date)}${isSameYear ? '' : ' ' + date.getFullYear()}`;
     }
 
     returnString += ', ';
