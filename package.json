@@ -14,7 +14,7 @@
     "convert"
   ],
   "author": "sdoe",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sd0e/utcToRelative/issues"
   },
