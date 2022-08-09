@@ -18,27 +18,27 @@ export const utcToRelative = (
 
 	const getDayName = (dayDate: Date) => {
 		const day: number = dayDate.getDay();
-		return monthFormat === 'full'
-			? ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][day]
-			: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][day];
+		return ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][day];
 	};
 
 	const getMonthName = (monthDate: Date) => {
 		const month: number = monthDate.getMonth();
-		return [
-			'January',
-			'February',
-			'March',
-			'April',
-			'May',
-			'June',
-			'July',
-			'August',
-			'September',
-			'October',
-			'November',
-			'December',
-		][month];
+		return monthFormat === 'full'
+			? [
+					'January',
+					'February',
+					'March',
+					'April',
+					'May',
+					'June',
+					'July',
+					'August',
+					'September',
+					'October',
+					'November',
+					'December',
+			  ][month]
+			: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][month];
 	};
 
 	const getTwoDigitInteger = (integer: number) => {
