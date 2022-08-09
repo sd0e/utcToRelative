@@ -1,8 +1,9 @@
 {
   "name": "utctorelative",
-  "version": "1.2.4",
+  "version": "1.3.0",
   "description": "Convert a UTC time (in seconds) to a relative time (e.g. \"Tomorrow, 16:00\")",
-  "main": "utcToRelative.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sd0e/utcToRelative.git"
@@ -18,5 +19,25 @@
   "bugs": {
     "url": "https://github.com/sd0e/utcToRelative/issues"
   },
-  "homepage": "https://github.com/sd0e/utcToRelative#readme"
+  "homepage": "https://github.com/sd0e/utcToRelative#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.5",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.7",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "upload": "npm run format && npm run lint && npm test && npm run build && npm publish"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
