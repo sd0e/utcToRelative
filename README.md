@@ -6,7 +6,7 @@ utcToRelative is a package which converts a UTC time (in milliseconds) into a lo
 
 utcToRelative can be installed by running `npm i --save utctorelative`.
 
-It can be used by writing `const utcToRelative = require('utctorelative')` and calling the function `utcToRelative`.
+It can be used by writing `import { utcToRelative } from 'utctorelative'` and calling the function `utcToRelative`.
 
 ## Parameters
 
@@ -55,9 +55,9 @@ For the purpose of these examples, `1659885783755` is Sunday, 7 August 2022 at 4
 The following table shows the output of the following code when it is run on the stated days:
 
 ```
-const utcToRelative = require('utctorelative')
+import { utcToRelative } from 'utctorelative';
 
-utcToRelative(1659885783755, '12')
+console.log(utcToRelative(1659885783755, '12'));
 ```
 
 | Date | Output |
